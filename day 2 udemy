@@ -1,0 +1,37 @@
+DATA TYPES
+two_digit_number = input("Type a two digit number: ")
+bob = str(two_digit_number)
+bob = int(two_digit_number[0]) + int(two_digit_number[1])
+print(bob)
+ 
+   Type a two digit number: 45
+   9
+   
+---------------------------------------------------------------------
+TIME UNTIL 90
+age = input("What is your current age? ")
+
+weeks = (90 - int(age)) * 52
+days = (90 - int(age)) * 365
+months = (90 - int(age)) * 12
+
+print(f"You have {days} days, {weeks} weeks, and {months} months left.") 
+  
+  What is your current age? 20
+  You have 25550 days, 3640 weeks, and 840 months left.
+  ---------------------------------------------------------------------
+ TIP CALC
+ print("Welcome to the tip calculator.")
+total = input("what was the total bill? ")
+percent = input("what percent would you like to give? 10, 12, 15? ")
+people = input("How many people to split the bill? ")
+percent = float(percent) / 100
+perperson = (float(total) / int(people))
+actual = (percent * perperson) + perperson
+print(f"Each person should pay: {round(actual,2)}")
+    
+    Welcome to the tip calculator.
+  what was the total bill? 124.56
+  what percent would you like to give? 10, 12, 15? 12
+  How many people to split the bill? 7
+  Each person should pay: 19.93
