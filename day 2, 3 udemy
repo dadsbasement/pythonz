@@ -8,6 +8,17 @@ print(bob)
    9
    
 ---------------------------------------------------------------------
+height = float(height)
+weight = float(weight)
+
+BMI= weight / (height * height)
+BMI = float(BMI)
+print(int(BMI))
+
+   height 1.7
+   weight 80
+   bmi = 28
+----------------------------------------------------------
 TIME UNTIL 90
 age = input("What is your current age? ")
 
@@ -35,3 +46,7 @@ print(f"Each person should pay: {round(actual,2)}")
   what percent would you like to give? 10, 12, 15? 12
   How many people to split the bill? 7
   Each person should pay: 19.93
+----------------------------------------------------------------------------
+DAY 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
