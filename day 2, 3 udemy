@@ -158,3 +158,37 @@ print(f"Your final bill is: ${bill}.")
                              
 ----------------------------------------------------------------------------------------
 
+
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+direction=input('Your at a cross road. Where do you want to go? Type "left" or "right"\n')
+if direction == "left":
+    choice = input('You came to a lake. There is an island in the middle of the lake. Type wait to "wait" for the boat. Type "Swim" to swim across.\n')
+    if choice == "wait":
+        choice2 = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow, and one blue. Which colour do you choose?\n")
+        if choice2 == "Yellow":
+            print("You Win!")
+        elif choice2 == "Red":
+            print("You were burned by fire. Game Over")
+        elif choice2 == "Blue":
+            print("You were eaten by beasts. Game Over")
+        else:
+            print("Game Over.")
+    else:
+        print("You were attacked by a trout. Game Over.")
+else:
+    print("You fell into a hole. Game Over.")
+    
+    
+    Welcome to Treasure Island.
+Your mission is to find the treasure.
+Your at a cross road. Where do you want to go? Type "left" or "right"
+left
+You came to a lake. There is an island in the middle of the lake. Type wait to "wait" for the boat. Type "Swim" to swim across.
+wait
+You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow, and one blue. Which colour do you choose?
+blue
+You were eaten by beasts. Game Over
+
+-------------------------------------------------------------------------------------------------------------
