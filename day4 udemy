@@ -1,0 +1,23 @@
+import random
+a = 0
+b = 1
+coinflip = (random.randint(a, b))
+if coinflip == 0:
+    print("Tails")
+else:
+    print("Heads")
+    
+    -> Tails
+    -> Tails
+    -> Heads
+--------------------------------
+from random import randrange
+
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(", ")
+
+random_index = randrange(len(names))
+print(F"{names[random_index]} is going to buy the meal today!")
+
+  Give me everybody's names, separated by a comma. bob, sue, dan
+dan is going to buy the meal today!
