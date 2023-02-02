@@ -77,3 +77,84 @@ else:
   
   Which year do you want to check? 1989
   Not leap year.
+  -------------------------------------------------
+ 
+ Automated Pizza Bill
+ 
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L ")
+add_pepperoni = input("Do you want pepperoni? Y or N ")
+extra_cheese = input("Do you want extra cheese? Y or N ")
+
+final = "Your final bill is:"
+bill = 0
+if size == "L":
+    bill = 25
+    if add_pepperoni== "Y":
+        bill = 28
+        if extra_cheese == "Y":
+            bill = 29
+            print(F"{final} ${bill}.")
+        else: print(F"{final} ${bill}.")
+    elif extra_cheese =="Y":
+        bill = 26
+        print(F"{final} ${bill}.")
+    else: print(F"{final} ${bill}.")
+else: 
+        if size == "M":
+            bill = 20
+            if add_pepperoni == "Y":
+                bill = 23
+                if extra_cheese == "Y":
+                    bill = 24
+                    print(F"{final} ${bill}.")
+                else: print(F"{final} ${bill}.")
+            elif extra_cheese =="Y":
+                bill = 21
+                print(F"{final} ${bill}.")
+            else: print(F"{final} ${bill}.")
+        else:   
+                if size == "S":
+                    bill = 15
+                    if add_pepperoni == "Y":
+                        bill = 17
+                        if extra_cheese == "Y":
+                            bill = 18
+                            print(F"{final} ${bill}.")
+                        else: print(F"{final} ${bill}.")
+                    elif extra_cheese == "Y":
+                        bill = 16
+                        print(F"{final} ${bill}.")
+                    else: print(F"{final} ${bill}.")
+                else: print(F"{final} ${bill}.")
+````````````````````````````````````````````````````````````````
+solution-----------------------
+
+bill = 0
+ if size == "S":
+  bill += 15
+elif size == "M":
+  bill += 20
+else:
+  bill += 25
+
+if add_pepperoni == "Y":
+  if size == "S":
+    bill += 2
+  else:
+    bill += 3
+    
+if extra_cheese == "Y":
+  bill += 1
+  
+print(f"Your final bill is: ${bill}.")         
+----------------------------------------------------------------------------------------                         
+                            size = "L"
+                               add_pepperoni = "Y"
+                               extra_cheese = "N"
+                               
+                               Your final bill is: $28.
+                             
+                             
+----------------------------------------------------------------------------------------
+
