@@ -21,3 +21,47 @@ print(F"{names[random_index]} is going to buy the meal today!")
 
   Give me everybody's names, separated by a comma. bob, sue, dan
 dan is going to buy the meal today!
+
+-----------------------------------------
+Treasure Map
+
+row1 = ["⬜️","️⬜️","️⬜️"]
+row2 = ["⬜️","⬜️","️⬜️"]
+row3 = ["⬜️️","⬜️️","⬜️️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+
+listy = list(position)
+a = int(position[0])
+b = int(position[1])
+if b == 1:
+    bob = row1
+elif b == 2:
+    bob = row2
+elif b == 3:
+    bob = row3
+else:
+    print("error if b")
+
+if a == 1:
+    bob[0] = "X"
+elif a == 2:
+    bob[1] =  "X"
+elif a == 3:
+    bob[2] = "X"
+else:
+    print("error if a")
+
+
+print(f"{row1}\n{row2}\n{row3}")
+````````````````````````````````````````
+'⬜️', '️⬜️', '️⬜️']
+['⬜️', '⬜️', '️⬜️']
+['⬜️️', '⬜️️', '⬜️️']
+Where do you want to put the treasure? 31
+['⬜️', '️⬜️', 'X']
+['⬜️', '⬜️', '️⬜️']
+['⬜️️', '⬜️️', '⬜️️']
+
+---------------------------------------------------
