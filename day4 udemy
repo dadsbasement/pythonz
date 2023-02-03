@@ -65,3 +65,119 @@ Where do you want to put the treasure? 31
 ['⬜️️', '⬜️️', '⬜️️']
 
 ---------------------------------------------------
+
+import random
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+prompt = input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n")
+listy = rock, paper, scissors
+computer = random.choice(listy)
+prompt = int(prompt)
+#(computer == rand prompt == prompt)
+if (computer == rock) and (prompt == 0):
+    print(rock)
+    print("Computer Chose:")
+    print(computer)
+    print("It's a draw.")
+elif (computer == rock) and (prompt == 1):
+    print(paper)
+    print("Computer Chose:")
+    print(computer)
+    print("You win.")
+elif (computer == rock) and (prompt == 2):
+    print(scissors)
+    print("Computer Chose:")
+    print(computer)
+    print("You Lose.")
+else:  
+    if (computer == paper) and (prompt == 0):
+            print(rock)
+            print("Computer Chose:")
+            print(computer)
+            print("You lose.")
+    elif (computer == paper) and (prompt == 1):
+            print(paper)
+            print("Computer Chose:")
+            print(computer)
+            print("It's a draw.")
+    elif (computer == paper) and (prompt == 2):
+            print(scissors)
+            print("Computer Chose:")
+            print(computer)
+            print("You Win.")
+    else:
+        if (computer == scissors) and (prompt == 0):
+            print(rock)
+            print("Computer Chose:")
+            print(computer)
+            print("You Win.")
+        elif (computer == scissors) and (prompt == 1):
+            print(paper)
+            print("Computer Chose:")
+            print(computer)
+            print("You lose.")
+        elif (computer == scissors) and (prompt == 2):
+            print(scissors)
+            print("Computer Chose:")
+            print(computer)
+            print("It's a tie.")
+        else:
+            print("what the fuck did you do")
+```````````````````````````````````````````````````````````
+what i should have fucking done
+adding images to a list, using their index value to call them
+and to have a matching userinput for selection.
+
+import random
+images=[rock, paper, scissors]
+prompt = input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n")
+prompt = int(prompt)
+computer = random.randint(0, 2)
+  
+if computer == 0 and prompt == 2:
+  print(images[prompt])
+  print("computer chose:")
+  print(images[computer])
+  print("You fucking lose faggot")
+elif prompt > computer:
+  print(images[prompt])
+  print("computer chose:")
+  print(images[computer])
+  print("You fucking win")
+elif prompt == computer:
+  print(images[prompt])
+  print("computer chose:")
+  print(images[computer])
+  print("Its a tie dickhead")
+elif prompt < computer:
+  print(images[prompt])
+  print("computer chose:")
+  print(images[computer])
+  print("you lose dickhead")
+else:
+  print("fuck you nigga")
