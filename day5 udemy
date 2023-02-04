@@ -1,0 +1,65 @@
+
+student_heights = input("Input a list of student heights ").split()
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+sumz = 0
+
+for student in student_heights:
+    sumz += student
+
+average = sumz / len(student_heights)
+print(round(average))
+    
+    Input a list of student heights 10 20 30
+      20
+      
+==============================================================================================
+what she did
+~~~~~for char in range(1, input(S) + 1):
+        password += random.choice(letters)
+
+for num in range(1, input(S) + 1):
+        password += random.choice(numbers)
+        
+        etc....
+        print pass
+----------------------------
+what i should have fucking done
+jumbled = random.shuffle(unjumbled)
+
+
+  import random
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+
+print("Welcome to PyPassword Generator!")
+letterinput = int(input("How many letters would you like in your password?\n"))
+symbolinput = int(input("How many symbols would you like in your password?\n"))
+numberinput = int(input("How many numbers would you like in your password?\n"))
+
+randletter = random.choices(letters, k=letterinput)
+randsymbol = random.choices(symbols, k=symbolinput)
+randnum = random.choices(numbers, k=numberinput)
+
+unjumbled = randletter + randsymbol + randnum
+
+jumbled = random.choices(unjumbled, k=len(unjumbled))
+jumbled = ''.join(jumbled)
+
+print(F"Here is your password: {jumbled}")
+
+
+`````````````````````````````````````````````````````
+Welcome to PyPassword Generator!
+How many letters would you like in your password?
+10
+How many symbols would you like in your password?
+10
+How many numbers would you like in your password?
+10
+Here is your password: fC!5*Q$!&G%84p59&49n9p55)5H%Ca
+
+=============================================================================
+
+
