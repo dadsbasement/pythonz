@@ -14,3 +14,29 @@ Width of wall: 4
 You'll need 2 cans of paint.
 
 ================================================================================
+#Write your code below this line 👇
+def prime_checker(number):
+
+def prime_checker(number):
+  primeflag = True
+  for i in range(2, number):
+    if number % i == 0:
+      primeflag = False
+      break
+  if primeflag:
+    print("its prime")
+  else:
+    print("its not")
+   
+
+
+
+n = int(input("Check this number: "))
+prime_checker(number=n)
+````````````````````````````````````````
+Check this number: 3
+its prime
+
+======================================================================================
+
+
