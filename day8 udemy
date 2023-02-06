@@ -1,0 +1,16 @@
+# Define a function called paint_calc() so that the code below works.  
+def paint_calc(height, width, cover):
+    bob = round((height * width) / cover)
+    print(F"You'll need {bob} cans of paint.")
+
+
+test_h = int(input("Height of wall: "))
+test_w = int(input("Width of wall: "))
+coverage = 5
+paint_calc(height=test_h, width=test_w, cover=coverage)
+`````````````````````````````````````````````````````````````````
+Height of wall: 2
+Width of wall: 4
+You'll need 2 cans of paint.
+
+================================================================================
